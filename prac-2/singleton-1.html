@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+</head>
+
+<body>
+    <script>
+        let instance;
+
+        function Singleton() {
+            if (instance) {
+                return instance
+            }
+            instance = this
+        }
+
+        console.log(new Singleton() === new Singleton())
+    </script>
+</body>
+
+</html>
