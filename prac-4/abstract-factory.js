@@ -45,10 +45,10 @@ class WebServiceFactory {
     }
 }
 
-siteFactory = new LandingPageFactory()
+const siteFactory = new LandingPageFactory()
 
-site = siteFactory.makeLandingPage()
-specialist = siteFactory.makeFrontEndDev()
+const site = siteFactory.makeLandingPage()
+const specialist = siteFactory.makeFrontEndDev()
 
 site.getInfo()
 specialist.getInfo()
